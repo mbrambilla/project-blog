@@ -7,7 +7,7 @@ import { cookies } from 'next/headers';
 import clsx from 'clsx';
 import RespectMotionPreferences from '@/components/RespectMotionPreferences';
 
-import { BLOG_TITLE, COLOR_THEME_COOKIE_NAME, LIGHT_TOKENS, DARK_TOKENS } from '@/constants';
+import { BLOG_TITLE, BLOG_DESCRIPTION, COLOR_THEME_COOKIE_NAME, LIGHT_TOKENS, DARK_TOKENS } from '@/constants';
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -28,7 +28,7 @@ const monoFont = Spline_Sans_Mono({
 
 export const metadata = {
   title: BLOG_TITLE,
-  description: 'Wicked awesome blog'
+  description: BLOG_DESCRIPTION
 };
 
 function RootLayout({ children }) {

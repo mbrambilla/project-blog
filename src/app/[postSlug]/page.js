@@ -27,7 +27,7 @@ export async function generateMetadata({ params }) {
 }
 
 async function BlogPost({ params }) {
-  const blogPost = await loadBlogPost(params.postSlug);;
+  const blogPost = await loadBlogPost(params.postSlug);
 
   if (blogPost === null) {
     notFound();
