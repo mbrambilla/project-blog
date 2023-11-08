@@ -13,7 +13,7 @@ export async function GET() {
     feed.item({
       title: post.title,
       description: post.abstract,
-      pubDate: post.publishedOn,
+      date: post.publishedOn,
       url: `http://localhost/${post.slug}`
     });
   });
